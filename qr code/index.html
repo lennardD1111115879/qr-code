@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lade die QRCode-Bibliothek -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="icon" type="image/png" href="imge/logo.png   ">
+    <title>QR Code Generator</title>
+
+
+</head>
+
+<body>
+    <!-- Container für den Inhalt -->
+    <div class="wrapper">
+        <!-- Eingabefeld für Text oder URL -->
+        <input type="text" id="placement" placeholder="Enter some text or URL">
+        <!-- Container für Optionen -->
+        <div class="options">
+            <!-- Dropdown-Menü für Größenauswahl -->
+            <select class="size" id="size">
+                <option value="100">100 X 100</option>
+                <option value="200">200 X 200</option>
+                <option value="300">300 X 300</option>
+            </select>
+            <!-- Farbauswahl für Hintergrundfarbe -->
+            <input type="color" class="color-inp" id="color1">
+            <!-- Farbauswahl für Vordergrundfarbe -->
+            <input type="color" class="color-inp" id="color2">
+            <!-- Container für den generierten QR-Code -->
+            <div class="container"></div>
+
+            <!-- Box mit Buttons -->
+            <div class="box">
+                <!-- Button zum Generieren des QR-Codes -->
+                <button id="generate" disabled>Generate</button>
+                <!-- Link zum Herunterladen des generierten QR-Codes -->
+                <button id="downloadButton">Download File</button>
+            </div>  
+        </div>
+    </div>
+
+    <!-- Verweise auf das JavaScript-Datei -->
+    <script src="script.js"></script>
+</body>
+
+</html>
